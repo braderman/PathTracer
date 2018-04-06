@@ -1,0 +1,560 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"M",
+				"Magnitude"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"hea",
+				"headerParsed"
+			],
+			[
+				"he",
+				"headerCount"
+			],
+			[
+				"mag",
+				"magFirst"
+			],
+			[
+				"en",
+				"enumToStr"
+			],
+			[
+				"prin",
+				"printBits"
+			],
+			[
+				"data",
+				"dataset"
+			],
+			[
+				"p",
+				"percentage"
+			],
+			[
+				"re",
+				"received"
+			],
+			[
+				"update",
+				"updateCursorState"
+			],
+			[
+				"updateCursor",
+				"updateCursorImage"
+			],
+			[
+				"pain",
+				"paintEnabled"
+			],
+			[
+				"m_b",
+				"m_bCursorOverImage"
+			],
+			[
+				"m_clari",
+				"m_clarityBrushSize"
+			],
+			[
+				"mea",
+				"measure_performance"
+			],
+			[
+				"m_rgb",
+				"m_pRgbImage"
+			],
+			[
+				"castI",
+				"castImageToFloat"
+			],
+			[
+				"cast",
+				"castImageKernel"
+			],
+			[
+				"device",
+				"deviceGrayscaleImageData"
+			],
+			[
+				"include",
+				"include_directories"
+			],
+			[
+				"SDL2_L",
+				"SDL2_LIBRARIES"
+			],
+			[
+				"m_s",
+				"m_surf_screen"
+			],
+			[
+				"SDL_De",
+				"SDL_Renderer"
+			],
+			[
+				"SDL_RENDERER_",
+				"SDL_RENDERER_ACCELERATED"
+			],
+			[
+				"new",
+				"newSongSet"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.py",
+			"settings":
+			{
+				"buffer_size": 323,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "PathTracer.sublime-project",
+			"settings":
+			{
+				"buffer_size": 45,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "vec3.py",
+			"settings":
+			{
+				"buffer_size": 3115,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test_vec3.py",
+			"settings":
+			{
+				"buffer_size": 6103,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/brian/Code/PathTracer",
+		"/Users/brian/Code/PathTracer/__pycache__"
+	],
+	"file_history":
+	[
+		"/Users/brian/Code/PathTracer/output.ppm",
+		"/Users/brian/Scripts/CommonUtils.py",
+		"/Users/brian/screenlog.0",
+		"/Users/brian/Downloads/code_decode_magiquest.py",
+		"/Users/brian/Downloads/code.py",
+		"/Users/brian/Downloads/Arduino-IRremote-master/IRremote.h",
+		"/Users/brian/Downloads/Arduino-IRremote-master/IRremoteInt.h",
+		"/Users/brian/Temp/test.py",
+		"/Volumes/CIRCUITPY/code.py",
+		"/Users/brian/Documents/code.py",
+		"/Volumes/CIRCUITPY/wand_data.txt",
+		"/Users/brian/hardcopy.0",
+		"/Users/brian/Downloads/code_magiquest.py",
+		"/Users/brian/.bash_profile",
+		"/Users/brian/build/fltk-1.3.x-r12024/FL/Enumerations.H",
+		"/Users/brian/Documents/Resume/LaTeX/resume.tex",
+		"/Users/brian/Code/Rust/hello_world/main.rs",
+		"/Users/brian/Dropbox/Unity/cecilcpp/Cecil/Metadata/BlobHeap.cpp",
+		"/Users/brian/Dropbox/Unity/cecilcpp/include/Cecil/Metadata/BlobHeap.h",
+		"/Users/brian/Dropbox/Unity/cecilcpp/include/Cecil/Metadata/StringHeap.h",
+		"/Users/brian/Dropbox/Unity/cecilcpp/include/Cecil/Metadata/Heap.h",
+		"/Users/brian/Dropbox/Unity/cecilcpp/Cecil/PE/ImageReader.cpp",
+		"/Users/brian/Dropbox/Unity/cecilcpp/include/Cecil/PE/Image.h",
+		"/Users/brian/Dropbox/Unity/cecilcpp/CMakeLists.txt",
+		"/Users/brian/Dropbox/Unity/cecilcpp/cmake/FindICU.cmake",
+		"/Users/brian/build/icu/include/unicode/unistr.h",
+		"/Users/brian/build/icu/include/unicode/stringpiece.h",
+		"/Users/brian/Dropbox/Unity/cecilcpp/Cecil/Metadata/StringHeap.cpp",
+		"/Users/brian/Dropbox/Unity/cecilcpp/include/Cecil/Metadata/TableHeap.h",
+		"/Users/brian/Dropbox/Unity/cecilcpp/Cecil/Metadata/TableHeap.cpp",
+		"/Users/brian/Dropbox/Unity/cecilcpp/include/Cecil/types.h",
+		"/Users/brian/Dropbox/Unity/cecilcpp/Cecil/Metadata/Heap.cpp",
+		"/Users/brian/build/icu/include/unicode/umachine.h",
+		"/Users/brian/build/cecilcpp/In file included from /Users/brian/Dropbox/Unity/cecilcpp/Cecil/Metadata/TableHeap.cpp",
+		"/Users/brian/Dropbox/Unity/cecilcpp/cecilcpp.cpp",
+		"/Users/brian/Dropbox/Unity/cecilcpp/include/Cecil/Metadata/Utilities.h",
+		"/Users/brian/Dropbox/Unity/cecilcpp/Cecil/PE/Image.cpp",
+		"/Users/brian/Dropbox/Unity/cecilcpp/Cecil/Metadata/Utilities.cpp",
+		"/Users/brian/Dropbox/Unity/cecilcpp/include/Cecil/PE/ImageReader.h",
+		"/Users/brian/Dropbox/Unity/cecilcpp/include/Cecil/PE/BinaryStreamReader.h",
+		"/Users/brian/Dropbox/Unity/cecilcpp/include/Cecil/PE/DataDirectory.h",
+		"/Users/brian/Dropbox/Unity/cecilcpp/include/MessageException.h",
+		"/Users/brian/build/cecilcpp/CecilCpp.sublime-project",
+		"/Users/brian/Dropbox/Unity/cecilcpp/Cecil/PE/BinaryStreamReader.cpp",
+		"/Users/brian/Dropbox/Unity/cecilcpp/include/Cecil/exceptions.h",
+		"/Users/brian/Dropbox/hwscanner.py",
+		"/Users/brian/Downloads/opencv2.framework/Versions/A/Headers/imgproc.hpp",
+		"/Users/brian/Desktop/PayPal_Document385.html",
+		"/Users/brian/Scripts/create_music_folders.py",
+		"/Users/brian/Code/imageexplorerfltk/ClarityPaintState.cpp",
+		"/Users/brian/Code/imageexplorerfltk/ClarityPaintState.h",
+		"/Users/brian/Code/imageexplorerfltk/CMakeLists.txt",
+		"/Users/brian/Code/imageexplorerfltk/ImageExplorerUi.cpp",
+		"/Users/brian/Code/imageexplorerfltk/ImageView.cpp",
+		"/Users/brian/Code/imageexplorerfltk/ImageView.h",
+		"/Users/brian/Code/imageexplorerfltk/FreeImage/Source/LibJXR/image/sys/perfTimer.h",
+		"/Users/brian/build/fltk-1.3.x-r12024/CMake/setup.cmake",
+		"/Users/brian/Code/imageexplorerfltk/FreeImage/Source/LibJXR/image/sys/perfTimerANSI.c",
+		"/Users/brian/Code/imageexplorerfltk/FreeImage/Source/LibJXR/CMakeLists.txt",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/type_traits",
+		"/Users/brian/Code/imageexplorerfltk/agg/include/agg_renderer_outline_aa.h",
+		"/Users/brian/Code/imageexplorerfltk/agg/include/agg_scanline_u.h",
+		"/Users/brian/Code/imageexplorerfltk/FreeImage/Source/FreeImageLib/CMakeLists.txt",
+		"/Users/brian/Code/imageexplorerfltk/FreeImage/Source/LibJXR/common/include/guiddef.h",
+		"/Users/brian/Code/imageexplorerfltk/FreeImage/CMakeLists.txt",
+		"/Users/brian/Code/imageexplorerfltk/FreeImage/Source/LibJXR/jxrgluelib/JXRGlue.c",
+		"/Users/brian/Code/imageexplorerfltk/FreeImage/Source/LibJXR/jxrgluelib/JXRGlue.h",
+		"/Users/brian/Code/imageexplorerfltk/FreeImage/Source/LibJXR/image/sys/strcodec.h",
+		"/Users/brian/Code/imageexplorerfltk/FreeImage/Source/FreeImage/PluginJXR.cpp",
+		"/Users/brian/build/imageexplorerfltk/ImageExplorerFltk.sublime-project",
+		"/Users/brian/Downloads/Ayam/ayam/src/ayamConf.tcl",
+		"/Applications/Pixar/RenderManProServer-20.9/lib/shaders/aachrome.sl",
+		"/Applications/Pixar/RenderManProServer-20.9/lib/shaders/aachrome.slo",
+		"/Volumes/ayam1.23/scripts/2lcons.tcl",
+		"/Users/brian/Downloads/Ayam/ayam/src/Makefile",
+		"/Users/brian/Downloads/moi.idl",
+		"/Users/brian/Downloads/ECMA-335/CLILibraryTypes.xml",
+		"/Users/brian/Documents/Resume/LaTeX/marinus_cover.txt",
+		"/Users/brian/Dropbox/Apple Inc. and 69 others.vcf",
+		"/Users/brian/build/fltk-build/UseFLTK.cmake",
+		"/Users/brian/build/fltk-build/FLTKConfig.cmake",
+		"/Users/brian/build/opencv-build/OpenCV.sublime-project",
+		"/Users/brian/settings.dat",
+		"/Users/brian/Downloads/fltk-build/UseFLTK.cmake",
+		"/Users/brian/Downloads/fltk-1.3.3/CMake/UseFLTK.cmake.in",
+		"/Users/brian/Downloads/moai-dev/samples/vector-svg/main.lua",
+		"/Users/brian/Downloads/moai-dev/build/build-osx/CMakeFiles/CMakeError.log",
+		"/Users/brian/Downloads/moai-dev-develop/appveyor.yml",
+		"/Users/brian/Downloads/moai-dev-develop/circle.yml",
+		"/Users/brian/Code/OpenCV/display_image/CMakeLists.txt",
+		"/Users/brian/Code/OpenCV/display_image/display_image.cpp",
+		"/Users/brian/Temp/hocr",
+		"/Users/brian/Temp/out.txt",
+		"/Users/brian/Documents/Resume/LaTeX/bettis_cover.tex",
+		"/Users/brian/Downloads/cover_letter_3/cover_letter_3.tex",
+		"/Users/brian/Downloads/nrec_cover.txt",
+		"/Users/brian/Downloads/fltk-1.3.3/test/cube.cxx",
+		"/Users/brian/Downloads/MLP FiM Song List.txt",
+		"/Users/brian/Code/Renderman/Companion/rc_4.1.py",
+		"/Users/brian/Code/Renderman/Companion/rc_4.2.py",
+		"/Users/brian/Code/Renderman/Companion/rc_2.6.py",
+		"/Users/brian/Code/Renderman/Companion/rc_2.7.py",
+		"/Users/brian/Code/Renderman/Companion/rc_2.8.py",
+		"/Users/brian/Code/Renderman/Companion/rc_2.2.py",
+		"/Users/brian/Code/Renderman/Companion/rc_2.1.py",
+		"/Users/brian/Code/Renderman/Companion/rc_2.4.py",
+		"/Users/brian/Code/Renderman/Companion/rc_2.5.py",
+		"/Users/brian/Code/Renderman/Companion/rc_2.3.py",
+		"/Applications/Pixar/RenderManProServer-19.0/etc/rendermn.ini",
+		"/Users/brian/Downloads/scenes/spt/dinosaur/dino.rib",
+		"/Users/brian/Downloads/openexr-2.2.0/IlmImfUtil/ImfImage.h",
+		"/Users/brian/Downloads/openexr-2.2.0/IlmImf/ImfArray.h",
+		"/Users/brian/Downloads/mosaic/mosaic.py",
+		"/Users/brian/Code/Kaggle/titanic/titanic_scikit.py",
+		"/Users/brian/Code/Kaggle/titanic/predictions.csv",
+		"/Users/brian/Code/Kaggle/titanic/Titanic scikit.py",
+		"/Users/brian/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/brian/Library/Application Support/Sublime Text 3/Packages/User/JSON.sublime-settings",
+		"/Users/brian/Code/HeteroParallelCourse/libwb-master/skel/mp6.cu",
+		"/Users/brian/Code/HeteroParallelCourse/libwb-master/wbExport.h",
+		"/Users/brian/Code/HeteroParallelCourse/libwb-master/wbImage.h",
+		"/Users/brian/Code/HeteroParallelCourse/libwb-master/skel/mp11.cu",
+		"/Users/brian/Code/datasciencecoursera/Hello.md",
+		"/Users/brian/hpp/data_mp5/9/output_test.raw",
+		"/Users/brian/Code/HeteroParallelCourse/libwb-master/skel/mp4.cu",
+		"/Applications/TorBrowser.app/TorBrowser/Data/Tor/torrc-defaults",
+		"/Users/brian/Downloads/tails-i386-1.2.3/tails-i386-1.2.3.iso.sig",
+		"/Users/brian/Scripts/unquote.py"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 323,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								185,
+								185
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "PathTracer.sublime-project",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 45,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "vec3.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3115,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1099,
+								1099
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "test_vec3.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4874,
+								4874
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 268.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "CecilCpp - all",
+	"project": "PathTracer.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 262.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
