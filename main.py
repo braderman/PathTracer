@@ -1,5 +1,6 @@
 import sys
-from path_tracer import Vec3, Ray
+import math
+from path_tracer import Vec3, Ray, Sphere, HitableList
 
 def testImage():
 	nx = 200
@@ -13,21 +14,14 @@ def testImage():
 			ib = int(255.99 * col.B)
 			print("%d %d %d" % (ir, ig, ib))
 
-def hitSphere(center, radius, r):
-	oc = r.Origin - center
-	a = Vec3.dot(r.Direction, r.Direction)
-	b = 2.0 * Vec3.dot(oc, r.Direction)
-	c = Vec3.dot(oc, oc) - radius * radius
-	discriminant = b * b - 4.0 * a * c
-	return discriminant > 0.0
-
-def color(r):
-	if hitSphere(Vec3(0.0, 0.0, -1.0), 0.5, r):
-		return Vec3(1.0, 0.0, 0.0)
-		
-	unitDirection = Vec3.unitVector(r.Direction) # unitDiection x and y will be between -1 and 1
-	t = 0.5 * (unitDirection.Y + 1.0) # scale t -> 0 < t < 1
-	return (1.0 - t) * Vec3(1.0, 1.0, 1.0) + t * Vec3(0.5, 0.7, 1.0) #lerp between white and blue
+def color(r, world):
+	bHit, rec = world.hit(r, 0.0, sys.float_info.max)
+	if bHit:
+		return 0.5 * Vec3(rec.Normal.X+1, rec.Normal.Y+1, rec.Normal.Z+1)
+	else:
+		unitDirection = Vec3.unitVector(r.Direction)
+		t = 0.5 * (unitDirection.Y + 1.0)
+		return (1.0 - t) * Vec3(1.0, 1.0, 1.0) + t * Vec3(0.5, 0.7, 1.0)
 
 def main():
 	nx = 200
@@ -38,12 +32,16 @@ def main():
 	vertical = Vec3(0.0, 2.0, 0.0)
 	origin = Vec3(0.0, 0.0, 0.0)
 
+	world = HitableList()
+	world.append(Sphere(Vec3(0.0, 0.0, -1.0), 0.5))
+	world.append(Sphere(Vec3(0.0, -100.5, -1.0), 100.0))
+
 	for j in reversed(range(ny)):
 		for i in range(nx):
 			u = i / float(nx)
 			v = j / float(ny)
 			r = Ray(origin, lowerLeftCorner + (u * horizontal) + (v * vertical))
-			col = color(r)
+			col = color(r, world)
 			ir = int(255.99 * col.R)
 			ig = int(255.99 * col.G)
 			ib = int(255.99 * col.B)
