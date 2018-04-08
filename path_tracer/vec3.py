@@ -2,7 +2,7 @@ import math
 
 class Vec3:
 	def __init__(self, x = 0.0, y = 0.0, z = 0.0):
-		self._e = [x, y, z]
+		self._e = [float(x), float(y), float(z)]
 
 	def __str__(self):
 		return "%f %f %f" % (self._e[0], self._e[1], self._e[2])

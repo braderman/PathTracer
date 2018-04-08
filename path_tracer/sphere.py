@@ -5,7 +5,7 @@ import math
 class Sphere(Hitable):
 	def __init__(self, center = Vec3(), radius = 0.0):
 		self._center = center
-		self._radius = radius 
+		self._radius = float(radius) 
 
 	@property
 	def Center(self):

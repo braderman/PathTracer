@@ -1,6 +1,7 @@
 import sys
 import math
-from path_tracer import Vec3, Ray, Sphere, HitableList
+from path_tracer import Vec3, Ray, Sphere, HitableList, Camera
+from random import random
 
 def testImage():
 	nx = 200
@@ -26,22 +27,25 @@ def color(r, world):
 def main():
 	nx = 200
 	ny = 100
+	ns = 100
 	print("P3\n%d %d\n255" % (nx, ny))
-	lowerLeftCorner = Vec3(-2.0, -1.0, -1.0)
-	horizontal = Vec3(4.0, 0.0, 0.0)
-	vertical = Vec3(0.0, 2.0, 0.0)
-	origin = Vec3(0.0, 0.0, 0.0)
 
 	world = HitableList()
 	world.append(Sphere(Vec3(0.0, 0.0, -1.0), 0.5))
 	world.append(Sphere(Vec3(0.0, -100.5, -1.0), 100.0))
 
+	cam = Camera()
+
 	for j in reversed(range(ny)):
 		for i in range(nx):
-			u = i / float(nx)
-			v = j / float(ny)
-			r = Ray(origin, lowerLeftCorner + (u * horizontal) + (v * vertical))
-			col = color(r, world)
+			col = Vec3(0.0, 0.0, 0.0)
+			for s in range(ns):
+				u = (i + random()) / float(nx)
+				v = (j + random()) / float(ny)
+				r = cam.getRay(u, v)
+				col += color(r, world)
+
+			col /= float(ns)	
 			ir = int(255.99 * col.R)
 			ig = int(255.99 * col.G)
 			ib = int(255.99 * col.B)
