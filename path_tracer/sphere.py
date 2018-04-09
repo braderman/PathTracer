@@ -3,7 +3,8 @@ from .vec3 import Vec3
 import math
 
 class Sphere(Hitable):
-	def __init__(self, center = Vec3(), radius = 0.0):
+	def __init__(self, center, radius, material):
+		super().__init__(material)
 		self._center = center
 		self._radius = float(radius) 
 
@@ -19,7 +20,7 @@ class Sphere(Hitable):
 		t = temp
 		p = r.pointAtParameter(t)
 		normal = (p - self._center) / self._radius
-		return HitRecord(t, p, normal)
+		return HitRecord(t, p, normal, self._material)
 
 	def hit(self, r, tmin, tmax):
 		oc = r.Origin - self._center

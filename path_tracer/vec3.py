@@ -1,4 +1,5 @@
 import math
+from random import random
 
 class Vec3:
 	def __init__(self, x = 0.0, y = 0.0, z = 0.0):
@@ -129,4 +130,17 @@ class Vec3:
 	@staticmethod
 	def unitVector(v):
 		return v / v.Length
+
+	@staticmethod
+	def randomInUnitSphere():
+		while True:
+			p = 2.0 * Vec3(random(), random(), random()) - Vec3(1, 1, 1)
+			if p.SquaredLength < 1.0:
+				break
+
+		return p
+
+	@staticmethod
+	def reflect(v, n):
+		return v - 2 * Vec3.dot(v, n) * n
 
