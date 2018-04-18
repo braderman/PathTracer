@@ -3,7 +3,7 @@ from .ray import Ray
 from .vec3 import Vec3
 
 class Metal(Material):
-	def __init__(self, albedo, fuzz):
+	def __init__(self, albedo, fuzz = 0.0):
 		self._albedo = albedo
 		if fuzz < 1:
 			self._fuzz = float(fuzz)

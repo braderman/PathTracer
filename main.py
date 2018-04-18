@@ -1,7 +1,8 @@
 import sys
 import math
-from path_tracer import Vec3, Ray, Sphere, HitableList, Camera, Lambertian, Metal
+from path_tracer import Vec3, Ray, Sphere, HitableList, Camera, Lambertian, Metal, Dielectric
 from random import random
+import time
 
 def testImage():
 	nx = 200
@@ -38,12 +39,16 @@ def main():
 	print("P3\n%d %d\n255" % (nx, ny))
 
 	world = HitableList()
-	world.append(Sphere(Vec3(0, 0, -1), 0.5, Lambertian(Vec3(0.8, 0.3, 0.3))))
+	world.append(Sphere(Vec3(0, 0, -1), 0.5, Lambertian(Vec3(0.1, 0.2, 0.5))))
 	world.append(Sphere(Vec3(0, -100.5, -1), 100, Lambertian(Vec3(0.8, 0.8, 0.0))))
-	world.append(Sphere(Vec3(1, 0, -1), 0.5, Metal(Vec3(0.8, 0.6, 0.2), 1.0)))
-	world.append(Sphere(Vec3(-1, 0, -1), 0.5, Metal(Vec3(0.8, 0.8, 0.8), 0.3)))
+	world.append(Sphere(Vec3(1, 0, -1), 0.5, Metal(Vec3(0.8, 0.6, 0.2))))
+	world.append(Sphere(Vec3(-1, 0, -1), 0.5, Dielectric(1.5)))
+	world.append(Sphere(Vec3(-1, 0, -1), -0.45, Dielectric(1.5)))
 
 	cam = Camera()
+
+	numRays = 0
+	t0 = time.time()
 
 	for j in reversed(range(ny)):
 		for i in range(nx):
@@ -52,6 +57,7 @@ def main():
 				u = (i + random()) / float(nx)
 				v = (j + random()) / float(ny)
 				r = cam.getRay(u, v)
+				numRays += 1
 				col += color(r, world, 0)
 
 			col /= float(ns)
@@ -60,7 +66,14 @@ def main():
 			ig = int(255.99 * col.G)
 			ib = int(255.99 * col.B)
 			print("%d %d %d" % (ir, ig, ib))
+			print("row: %d, col: %d" % (j, i), file=sys.stderr)
 
+	t1 = time.time()
+	seconds = t1 - t0
+	print("Rays = %d" % numRays, file=sys.stderr)
+	print("Seconds = %f" % seconds, file=sys.stderr)
+	raysPerSecond = numRays/seconds
+	print("Rays/Second = %f" % raysPerSecond, file=sys.stderr)
 
 if __name__ == '__main__':
 	main()

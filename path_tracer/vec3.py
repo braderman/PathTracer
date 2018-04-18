@@ -144,3 +144,14 @@ class Vec3:
 	def reflect(v, n):
 		return v - 2 * Vec3.dot(v, n) * n
 
+	@staticmethod
+	def refract(v, n, niOverNt):
+		uv = Vec3.unitVector(v)
+		dt = Vec3.dot(uv, n)
+		discriminant = 1.0 - niOverNt * niOverNt * (1.0 - dt * dt)
+		if discriminant > 0:
+			refracted = niOverNt * (uv - n * dt) - n * math.sqrt(discriminant)
+			return (True, refracted)
+		else:
+			return (False, None)
+

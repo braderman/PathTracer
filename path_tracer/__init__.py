@@ -5,3 +5,4 @@ from .hitable_list import HitableList
 from .camera import Camera
 from .lambertian import Lambertian
 from .metal import Metal
+from .dielectric import Dielectric

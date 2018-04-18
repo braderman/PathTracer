@@ -1,6 +1,6 @@
 from .hitable import HitRecord
 
 class Material:
-	def scatter(self, r, rec):
+	def scatter(self, rIn, rec):
 		#bScattered, Attenuation Vector, Scattered Ray
 		return (False, None, None)
