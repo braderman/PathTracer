@@ -1,12 +1,19 @@
 from .vec3 import Vec3
 from .ray import Ray
+import math
 
 class Camera:
-	def __init__(self):
-		self._lowerLeftCorner = Vec3(-2.0, -1.0, -1.0)
-		self._horizontal = Vec3(4.0, 0.0, 0.0)
-		self._vertical = Vec3(0.0, 2.0, 0.0)
-		self._origin = Vec3(0.0, 0.0, 0.0)
+	def __init__(self, lookFrom, lookAt, vup, vfov, aspect): #vfov is top to bottom in degrees
+		theta = (vfov * math.pi) / 180.0
+		halfHeight = math.tan(theta / 2.0)
+		halfWidth = aspect * halfHeight
+		self._origin = lookFrom
+		w = Vec3.unitVector(lookFrom - lookAt)
+		u = Vec3.unitVector(Vec3.cross(vup, w))
+		v = Vec3.cross(w, u)
+		self._lowerLeftCorner = self._origin - (halfWidth * u) - (halfHeight * v) - w
+		self._horizontal = 2.0 * halfWidth * u
+		self._vertical = 2.0 * halfHeight * v
 
 	@property
 	def LowerLeftCorner(self):
@@ -24,5 +31,5 @@ class Camera:
 	def Origin(self):
 		return self._origin
 
-	def getRay(self, u, v):
-		return Ray(self._origin, self._lowerLeftCorner + (v * self._vertical) + (u * self._horizontal) - self._origin)
+	def getRay(self, s, t):
+		return Ray(self._origin, self._lowerLeftCorner + (s * self._horizontal) + (t * self._vertical) - self._origin)

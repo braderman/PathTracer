@@ -39,13 +39,14 @@ def main():
 	print("P3\n%d %d\n255" % (nx, ny))
 
 	world = HitableList()
+
 	world.append(Sphere(Vec3(0, 0, -1), 0.5, Lambertian(Vec3(0.1, 0.2, 0.5))))
 	world.append(Sphere(Vec3(0, -100.5, -1), 100, Lambertian(Vec3(0.8, 0.8, 0.0))))
 	world.append(Sphere(Vec3(1, 0, -1), 0.5, Metal(Vec3(0.8, 0.6, 0.2))))
 	world.append(Sphere(Vec3(-1, 0, -1), 0.5, Dielectric(1.5)))
 	world.append(Sphere(Vec3(-1, 0, -1), -0.45, Dielectric(1.5)))
 
-	cam = Camera()
+	cam = Camera(Vec3(-2, 2, 1), Vec3(0, 0, -1), Vec3(0, 1, 0), 25.0, float(nx)/float(ny))
 
 	numRays = 0
 	t0 = time.time()
