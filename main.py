@@ -46,7 +46,12 @@ def main():
 	world.append(Sphere(Vec3(-1, 0, -1), 0.5, Dielectric(1.5)))
 	world.append(Sphere(Vec3(-1, 0, -1), -0.45, Dielectric(1.5)))
 
-	cam = Camera(Vec3(-2, 2, 1), Vec3(0, 0, -1), Vec3(0, 1, 0), 25.0, float(nx)/float(ny))
+	lookFrom = Vec3(3, 3, 2)
+	lookAt = Vec3(0, 0, -1)
+	distToFocus = (lookFrom - lookAt).Length
+	aperature = 2.0
+
+	cam = Camera(lookFrom, lookAt, Vec3(0, 1, 0), 20.0, float(nx)/float(ny), aperature, distToFocus)
 
 	numRays = 0
 	t0 = time.time()
