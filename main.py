@@ -63,8 +63,8 @@ def createRandomScene():
 
 
 def main():
-	nx = 1200
-	ny = 800
+	nx = 200
+	ny = 100
 	ns = 10
 	print("P3\n%d %d\n255" % (nx, ny))
 
